@@ -10,9 +10,9 @@ Le but de ce TP est de vous faire découvrir, pour certains, le monde du web alo
 
 > Manque d'inspiration ?
 > tu peux aller sur [Dribble](https://dribbble.com/shots/popular) et chercher par exmple les mots clés suivants *`website cv`* / *`personal landing page* afin de t'inspirer de modèles`*\
-> [exemple 1](https://dribbble.com/shots/21314715-Drake-Personal-Portfolio)\
+> [exemple 1](https://dribbble.com/shots/15564150-Aleena-Personal-Portofolio-Landing-Page)\
 > [exemple 2](https://dribbble.com/shots/21708936-Portfolio-Landing-Page)\
-> [exemple 3](https://dribbble.com/shots/\15299804-Biolab-personal-portfolio-website-design)
+> [exemple 3](https://dribbble.com/shots/20658125-Personal-Portfolio-Landing-Page)
 
 ## Eléments obligatoires
 **Le nom respect de ces consignes sera pris en compte dans la notation**
