@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+html, body {height: 100%}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #0b1220 0%, #111827 100%);
+    color:#e6eef7;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height: 1.5;
+}
+
+
+/* Barre nav et header */
+
+.site-header{
+    padding:2rem 1.25rem 3rem;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    margin-bottom: 1.4rem;
+}
