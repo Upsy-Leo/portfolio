@@ -93,6 +93,7 @@ header {
     font-size: 8rem;
     font-weight: 700;
     color: #81904C;
+    
   }
 
 
@@ -136,5 +137,69 @@ footer{
   .hero-content p {
     font-size: 1rem;
   }
+}
+
+/*  PRESENTATION  */
+
+.poster {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #66ff7a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+.poster-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 60px;
+  align-items: center;
+}
+
+.poster-text {
+  flex: 1 1 500px;
+}
+
+.poster-text h2 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  color: #66ff7a;
+  text-transform: uppercase;
+}
+
+.poster-text .subtitle {
+  font-size: 2rem;
+  color: #66ff7a;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.poster-text .description {
+  font-size: 1.1rem;
+  color: #d6ffd6;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/*  PHOTO CV  */
+
+.poster-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.poster-image img {
+  width: 100%;
+  max-width: 400px;
+  border: 3px solid #66ff7a;
+  filter: grayscale(100%) contrast(120%);
+  border-radius: 8px;
 }
 
