@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>CV - ANDRE Léopold</title>
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Prénom Nom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header class="site-header" id="home">
-        <nav class="nav">
-            <a class="brand" href="#home">Léopold ANDRE</a>
-            <ul class="nav-list" aria-label="Navigation principale">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+  <header>
+    <h1>ANDRE Léopold - Etudiant en ingénierie</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">A propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+
+    <video autoplay myted loop id="bg-video">
+      <source src="video\index_background.mp4" type="video\mp4">
+      Votre navigateur ne supporte pas la video HTML5.
+    </video>
+
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2 class="title">ANDRE Léopold</h2>
+      <p>Actuellement étudiant mon cul faudra changer</p>
+      <p>Je recherche un stage pitié prenez moi</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© ANDRE Léopold — Portfolio personnel</p>
+  </footer>
 </body>
