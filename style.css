@@ -5,7 +5,7 @@ violet : #A888E0
 rouge : #F61347
 */
 
-/*  RESET  */
+/* ---------------------------- RESET ---------------------------- */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { scroll-behavior: smooth; }
 
@@ -16,7 +16,7 @@ body {
   overflow-x : hidden;
 }
 
-/*  HEADER  */
+/* ---------------------------- HEADER ---------------------------- */
 
 header {
   position: fixed;
@@ -50,7 +50,7 @@ header {
     color : #A888E0;
   }
 
-  /*  HERO  */
+  /* ---------------------------- HERO ---------------------------- */
 
   .hero {
     position: relative;
@@ -104,7 +104,7 @@ header {
   }
 
 
-/*  FOOTER  */
+/* ---------------------------- FOOTER ---------------------------- */
 
 footer{
   text-align: center;
@@ -114,7 +114,7 @@ footer{
   font-size: 0.9rem;
 }
 
-/*  ANIMATION  */
+/* ---------------------------- ANIMATION ---------------------------- */
 
 @keyframes fadeIn {
   from{
@@ -146,7 +146,7 @@ footer{
   }
 }
 
-/*  PRESENTATION  */
+/* ---------------------------- PRESENTATION ---------------------------- */
 
 .poster {
   min-height: 100vh;
@@ -194,7 +194,7 @@ footer{
   max-width: 500px;
 }
 
-/*  PHOTO CV  */
+/* ---------------------------- PHOTO CV ---------------------------- */
 
 .poster-image {
   flex: 1 1 400px;
@@ -210,7 +210,7 @@ footer{
   border-radius: 15px;
 }
 
-/*  COMPETENCES  */
+/* ---------------------------- COMPETENCES ---------------------------- */
 
 .competences {
   position: relative;
@@ -299,7 +299,7 @@ footer{
   }
 
 
-/*  PROJET  */
+/* ---------------------------- PROJET ---------------------------- */
 
 .projet {
   min-height: 100vh;
