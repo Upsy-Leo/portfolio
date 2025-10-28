@@ -15,7 +15,7 @@
   <!-- ---------------------------- HEADER ---------------------------- -->
 
   <header>
-    <h1>ANDRE Léopold - Etudiant en ingénierie</h1>
+    <h1>Portfolio - ANDRE Léopold</h1>
     <nav>
       <a href="#accueil">Accueil</a>
       <a href="#apropos">A propos</a>
@@ -35,27 +35,27 @@
     </video>
 
     <div class="overlay"></div>
-    <div class="hero-content">
+    <main class="hero-content">
       <h2 class="title">ANDRE Léopold</h2>
-    </div>
+    </main>
   </section>
 
   <!-- ---------------------------- A PROPOS ---------------------------- -->
 
   <section id="apropos" class="poster">
-  <section class="poster-content">
-    <section class="poster-text">
+  <div class="poster-content">
+    <article class="poster-text">
       <h2>QUI SUIS-JE ?</h2>
       <p class="subtitle">Léopold, étudiant en ingénierie et passionné de musique.</p>
       <p class="description">
         Quod si rectum statuerimus vel concedere amicis, quidquid velint, vel impetrare ab iis, quidquid velimus, perfecta quidem sapientia si simus, nihil habeat res vitii; sed loquimur de iis amicis qui ante oculos sunt, quos vidimus aut de quibus memoriam accepimus, quos novit vita communis. Ex hoc numero nobis exempla sumenda sunt, et eorum quidem maxime qui ad sapientiam proxime accedunt.
       </p>
-    </section>
+    </article>
 
-    <div class="poster-image">
+    <figure class="poster-image">
       <img src="images/selfie_index.jpeg" alt="photo_cv">
-    </div>
-  </section>
+    </figure>
+  </div>
   </section>
 
   <!-- ---------------------------- COMPETENCES ---------------------------- -->
@@ -66,73 +66,122 @@
       Votre navigateur ne supporte pas la video HTML5.
     </video>
 
-<div>
+<main>
   <h2>Compétences</h2>
   <p class="subtitle">Mes domaines techniques et créatifs</p>
 
   <div class="competences-grid">
-    <div class="competence-item">
+    <article class="competence-item">
       <h3>Développement</h3>
       <ul>
         <li>HTML / CSS / JavaScript</li>
         <li>Python / C / Arduino</li>
         <li>React / Node.js</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="competence-item">
+    <article class="competence-item">
       <h3>Ingénierie</h3>
       <ul>
         <li>Modélisation 3D (SolidWorks, Fusion 360)</li>
         <li>Électronique embarquée</li>
         <li>Capteurs et IoT</li>
       </ul>
-    </div>
+    </article>
 
-    <div class="competence-item">
+    <article class="competence-item">
       <h3>Création & Design</h3>
       <ul>
         <li>Musique assistée par ordinateur (Ableton)</li>
         <li>Montage vidéo / audio</li>
         <li>Design visuel</li>
       </ul>
-    </div>
-  </div>
+    </article>
+  </main>
 </section>
 
 <!-- ---------------------------- PROJETS ---------------------------- -->
 
-<section id="projets" class="projet">
+<section id="projets" class="projets-slider">
 
-  <video autoplay muted loop id="bg-video_projet">
-      <source src="video/257447_small.mp4" type="video/mp4">
+  <video autoplay muted loop id="bg-video_projets">
+      <source src="video/225204_medium.mp4" type="video/mp4">
       Votre navigateur ne supporte pas la video HTML5.
     </video>
-    
-  <div class="projet-content">
-    <div class="projet1-text">
-      <h2>QUI SUIS-JE ?</h2>
-      <p class="projet-soustitre">Léopold, étudiant en ingénierie et passionné de musique.</p>
-      <p class="description">
-        Quod si rectum statuerimus vel concedere amicis, quidquid velint, vel impetrare ab iis, quidquid velimus, perfecta quidem sapientia si simus, nihil habeat res vitii; sed loquimur de iis amicis qui ante oculos sunt, quos vidimus aut de quibus memoriam accepimus, quos novit vita communis. Ex hoc numero nobis exempla sumenda sunt, et eorum quidem maxime qui ad sapientiam proxime accedunt.
-      </p>
-    </div>
-    <div class="projet2-text">
-      <h2>QUI SUIS-JE ?</h2>
-      <p class="projet-soustitre">Léopold, étudiant en ingénierie et passionné de musique.</p>
-      <p class="description">
-        Quod si rectum statuerimus vel concedere amicis, quidquid velint, vel impetrare ab iis, quidquid velimus, perfecta quidem sapientia si simus, nihil habeat res vitii; sed loquimur de iis amicis qui ante oculos sunt, quos vidimus aut de quibus memoriam accepimus, quos novit vita communis. Ex hoc numero nobis exempla sumenda sunt, et eorum quidem maxime qui ad sapientiam proxime accedunt.
-      </p>
-    </div>
-    <div class="projet3-text">
-      <h2>QUI SUIS-JE ?</h2>
-      <p class="projet-soustitre">Léopold, étudiant en ingénierie et passionné de musique.</p>
-      <p class="description">
-        Quod si rectum statuerimus vel concedere amicis, quidquid velint, vel impetrare ab iis, quidquid velimus, perfecta quidem sapientia si simus, nihil habeat res vitii; sed loquimur de iis amicis qui ante oculos sunt, quos vidimus aut de quibus memoriam accepimus, quos novit vita communis. Ex hoc numero nobis exempla sumenda sunt, et eorum quidem maxime qui ad sapientiam proxime accedunt.
-      </p>
-    </div>
+
+  <h2 class="titre-projets">MES PROJETS</h2>
+
+  <div class="slider-container">
+    <article class="slide active">
+      <article class="slide-content">
+        <h3>Robot Autonome</h3>
+        <p>Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas ad verbum e Graecis expressas non inviti legant. quis enim tam inimicus paene nomini Romano est, qui Ennii Medeam aut Antiopam Pacuvii spernat aut reiciat, quod se isdem Euripidis fabulis delectari dicat, Latinas litteras oderit?</p>
+      </article>
+    </article>
+
+    <article class="slide">
+      <article class="slide-content">
+        <h3>Portfolio Interactif</h3>
+        <p>Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas ad verbum e Graecis expressas non inviti legant. quis enim tam inimicus paene nomini Romano est, qui Ennii Medeam aut Antiopam Pacuvii spernat aut reiciat, quod se isdem Euripidis fabulis delectari dicat, Latinas litteras oderit?</p>
+      </article>
+    </article>
+
+    <article class="slide">
+      <article class="slide-content">
+        <h3>Interface IoT</h3>
+        <p>Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas ad verbum e Graecis expressas non inviti legant. quis enim tam inimicus paene nomini Romano est, qui Ennii Medeam aut Antiopam Pacuvii spernat aut reiciat, quod se isdem Euripidis fabulis delectari dicat, Latinas litteras oderit?</p>
+      </article>
+    </article>
   </div>
+
+  <button class="nav-btn left">❮</button>
+  <button class="nav-btn right">❯</button>
 </section>
+
+<!-- ---------------------------- SCRIPT PROJETS ---------------------------- -->
+
+<script>
+const slider = document.querySelector('.slider-container');
+const slides = document.querySelectorAll('.slide');
+const btnNext = document.querySelector('.nav-btn.right');
+const btnPrev = document.querySelector('.nav-btn.left');
+let current = 0;
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${current * 100}%)`;
+}
+
+btnNext.addEventListener('click', () => {
+  current = (current + 1) % slides.length;
+  updateSlider();
+});
+
+btnPrev.addEventListener('click', () => {
+  current = (current - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+</script>
+
+  <!-- ---------------------------- CONTACT ---------------------------- -->
+
+<section id="contact" class="contact-section">
+  <h2>CONTACT</h2>
+  <p>Une question, une collaboration ou une opportunité ? Écrivez-moi ici :</p>
+
+  <form class="contact-form" action="#" method="post">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+    <label for="email">Email <span>*</span></label>
+    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Votre message..." rows="5"></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
 
   <!-- ---------------------------- FOOTER ---------------------------- -->
 

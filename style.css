@@ -34,8 +34,13 @@ header {
 
   header h1 {
     font-size: 16px;
-    color: #A888E0;
+    color: #ffffff;
     letter-spacing: 1px;
+    transition: color 0.3s;
+  }
+
+  h1:hover{
+    color : #A888E0;
   }
 
   nav a {
@@ -189,7 +194,7 @@ footer{
 
 .poster-text .description {
   font-size: 1.1rem;
-  color: #d6ffd6;
+  color: hsl(0, 0%, 100%);
   line-height: 1.7;
   max-width: 500px;
 }
@@ -237,7 +242,7 @@ footer{
 .competences .subtitle {
   position: relative;
   font-size: 1.5rem;
-  color: #f8396f;
+  color: #F61347;
   margin-bottom: 60px;
 }
 
@@ -253,7 +258,7 @@ footer{
 .competence-item {
   position:relative;
   flex: 1 1 280px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.567);
   border: 2px solid #F61347;
   border-radius: 20px;
   padding: 30px;
@@ -301,42 +306,103 @@ footer{
 
 /* ---------------------------- PROJET ---------------------------- */
 
-.projet {
-  min-height: 100vh;
+.projets-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   background-color: #0a0a0a;
-  color: #A888E0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 60px;
   font-family: 'Anton', sans-serif;
-  position: relative;
+  color: #f5f5f5;
 }
 
-.projet-content {
+.titre-projets {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 4rem;
+  color: #A888E0;
+  margin-top: 80px;
+  letter-spacing: 2px;
+}
+
+.slider-container {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  gap: 60px;
-  align-items: left;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  z-index: 2;
 }
 
-  .hero-content h1 {
-    margin: 15px 0;
-    font-size: 1.5rem;
-    line-height: 1.6;
-  }
-
-  .title {
-    font-size: 8rem;
-    font-weight: 700;
-    color: #A888E0;
-    
-  }
+.slide {
+  flex: 0 0 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
-  #bg-video_projet {
+.slide-content {
+  max-width: 1000px;
+  text-align: center;
+  background: rgba(15, 15, 15, 0.6);
+  padding: 60px 40px;
+  border-radius: 25px;
+  border: 2px solid #A888E0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.slide-content:hover {
+  transform: translateY(-10px);
+  background: rgba(0, 0, 0, 1);
+}
+
+.slide-content h3 {
+  font-size: 3rem;
+  color: #A888E0;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background: rgba(168,136,224,0.2);
+  border: 2px solid #A888E0;
+  color: #A888E0;
+  font-size: 2rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.nav-btn:hover {
+  background: #A888E0;
+  color: #0a0a0a;
+}
+
+.nav-btn.left { left: 30px; }
+.nav-btn.right { right: 30px; }
+
+@media (max-width: 768px) {
+  .slide-content h3 { font-size: 2rem; }
+  .slide-content p { font-size: 1rem; }
+  .titre-projets { font-size: 2rem; left: 20px; }
+}
+
+#bg-video_projets {
     position: absolute;
     top: 0;
     left: 0;
@@ -344,8 +410,90 @@ footer{
     height :100%;
     object-fit: cover;
     z-index: 0;
-    filter: brightness(40%);
+    filter: brightness(40%) opacity(40%) contrast(120%);
   }
+
+
+  /* ---------------------------- CONTACT ---------------------------- */
+
+.contact-section {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+  position: relative;
+ 
+}
+
+.contact-section h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+  color: #ab7b00ee;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #ab7b00ee;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #ab7b00ee;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #333;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  background: rgba(255,255,255,0.1);
+}
+
+.contact-form button {
+  background: #ab7b00ee;
+  color: #111;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* audio intégré */
+.contact-audio {
+  margin-top: 50px;
+  width: 250px;
+  filter: brightness(0.9);
+}
+
 
 
 
